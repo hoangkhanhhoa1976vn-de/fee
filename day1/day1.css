@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ border-bottom: 20px solid gray;
+  ul {
+    display: flex;
+    gap: 10px;
+    li {
+      &:hover {
+        border-bottom: 1px solid orange;
+      }
+    }
+  }
+}
+nav {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  .content {
+    position: absolute;
+    right: 150px;
+    bottom: 150px;
+    button {
+      &:hover {
+      }
+      background-color: blue;
+      border-radius: 45px;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+  }
+}
+section {
+  padding: 28px 32px 36px;
+  border-radius: 6px;
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  .tittle {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    .box {
+      padding: 10px;
+      border-radius: 45px;
+      background-color: white;
+      text-align: end;
+      flex: 1;
+    }
+    button {
+      padding: 10px 30px;
+      border-radius: 45px;
+      background-color: blue;
+      border-radius: 45px;
+      color: white;
+    }
+  }
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 30px;
+    .box {
+        position: relative;
+      .gray {
+        border-radius: 52% 48% 47% 53% / 43% 76% 24% 57% ;
+        background-color: #c4c4c4;
+        position: absolute;
+        z-index: -1;
+        width: 60%;
+        height: 100%;
+    }
+       .yello {
+        border-radius: 52% 48% 47% 53% / 43% 76% 24% 57% ;
+        background-color: orange;
+        position: absolute;
+        z-index: -1;
+        width: 60%;
+        height: 100%;
+        right: 0;
+    }
+    }
+    
+    h1 {
+        margin-left: 115px;
+    }
+    .car {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        .hi {
+            width: 105px;
+            height: 80px;
+            background-color: orange;
+            border-radius: 50% 50% 76% 24% / 50% 24% 76% 50%  ;
+        }
+    }
+    
+}
